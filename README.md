@@ -8,6 +8,10 @@ REST Framework Cache is based on the Django REST Framework viewsets.
 
 ## Installation
 
+Install using `pip`.
+
+    pip install djangorestframeworkcache
+
 The caching mechanisms are implemented in a middleware. Add it to your `MIDDLEWARE` setting:
 ```python
 MIDDLEWARE = [
