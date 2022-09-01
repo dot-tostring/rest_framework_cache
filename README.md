@@ -39,7 +39,7 @@ These arguments can be configured in the controls:
 
 The routes have to be defined as follows:
 ```python
-Route(AttributeValue, 'attribute__product_class__products')
+Route(Category, 'products__categories')
 ```
 ## Example
 
