@@ -15,7 +15,10 @@ class RestFrameworkCacheMiddleware:
 
     def __caching(self, response):
         if hasattr(response, CACHE_KEY_ATTRIBUTE) and response.status_code == 200:
-            cache.set(getattr(response, CACHE_KEY_ATTRIBUTE), response)
+            key = getattr(response, CACHE_KEY_ATTRIBUTE)
+
+            delattr(response, CACHE_KEY_ATTRIBUTE)
+            cache.set(key, response)
 
         return response
 

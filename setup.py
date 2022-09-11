@@ -4,7 +4,7 @@ from distutils.core import setup
 setup(
     name="djangorestframeworkcache",
     packages=["rest_framework_cache"],
-    version="0.0.1",
+    version="0.0.2",
     license="MIT",
     description="REST Framework Cache is a powerful and flexible toolkit for building cached views based on a fully dynamic lifecycle based on the variation of the information they provide.",
     author="Eduardo Ventura Izquierdo Nuñez",
